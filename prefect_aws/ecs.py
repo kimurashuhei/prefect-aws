@@ -507,7 +507,7 @@ class ECSTask(Infrastructure):
             "configure_cloudwatch_logs"
         ):
             raise ValueError(
-                "`configure_cloudwatch_log` must be enabled to use "
+                "`configure_cloudwatch_logs` must be enabled to use "
                 "`cloudwatch_logs_options`."
             )
         return values

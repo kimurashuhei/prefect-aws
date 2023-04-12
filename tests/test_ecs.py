@@ -1066,7 +1066,7 @@ async def test_logging_requires_execution_role_arn(aws_credentials):
 async def test_log_options_requires_logging(aws_credentials):
     with pytest.raises(
         ValidationError,
-        match="`configure_cloudwatch_log` must be enabled to use `cloudwatch_logs_options`",  # noqa
+        match="`configure_cloudwatch_logs` must be enabled to use `cloudwatch_logs_options`",  # noqa
     ):
         ECSTask(
             aws_credentials=aws_credentials,
